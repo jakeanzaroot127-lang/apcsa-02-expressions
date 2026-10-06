@@ -18,7 +18,10 @@
 public class ChangeMaker {
     public static void main(String[] args) {
         int totalCents = 287;   // try other values when it works
-
+        System.out.println("You have " + totalCents/25 + " Quarters and " + totalCents%25 + " Pennies");//Quarters
+        System.out.println("You have " + totalCents/10 + " Dimes and " + totalCents%10 + " Pennies");//Dimes
+        System.out.println("You have " + totalCents/5 + " Nickels and " + totalCents%5 + " Pennies");//Nickels
+        System.out.println("You have " + totalCents/1 + " Pennies");//Pennies
         // Your code here
 
     }
