@@ -37,12 +37,15 @@ double percent = correct / total * 100;
 ```
 **They get `0.0`. Explain what went wrong and write the corrected line.**
 
-Since correct and double 
+Since correct and total are both ints, when u divide 7/10 instead of getting a double that is 0.7, you get the single digit rounded which is 0, and the double of 0*100 = 0.0.
 
 ```java
-// corrected line:
+double correct = 7.0;
+double total = 10;
+double percent = correct / total * 100;
+System.out.println(percent + "%");
 ```
 
 **4. Give one real situation where `%` would genuinely be useful. Not from this worksheet — something from your own life or your project idea.**
 
-[your answer]
+One real situation where % (remainder) would be useful is figuring out if it’s an even or odd number of students in a group. In Java, I can use students % 2 to check whether there is a student left over when splitting the group into pairs.
