@@ -12,9 +12,9 @@
  */
 public class SplitTheBill {
     public static void main(String[] args) {
-        int billCents = 10000;
-        int people = 3;
-
+        double billCents = 10000;
+        double people = 3;
+        centsPerson = billCents/people;
         // Your code here
 
     }
