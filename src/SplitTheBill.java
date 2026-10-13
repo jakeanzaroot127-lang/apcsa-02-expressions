@@ -12,10 +12,15 @@
  */
 public class SplitTheBill {
     public static void main(String[] args) {
-        double billCents = 10000;
-        double people = 3;
-        centsPerson = billCents/people;
-        // Your code here
+        int billCents = 10000;
+        int people = 3;
+        System.out.println(billCents + " cents, " + people + " people");
+        double centsPerson = billCents/people;
+        double dollars = centsPerson/100;
+        System.out.println("Each person pays: " + (int)centsPerson + " cents ($" + dollars +")"); 
+        int remainder = billCents%people;
+        System.out.println("Leftover: " + remainder + " cent");
+        
 
     }
 }
