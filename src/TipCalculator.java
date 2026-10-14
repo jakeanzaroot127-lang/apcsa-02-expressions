@@ -15,13 +15,13 @@ public class TipCalculator {
         double billAmount = 87.35;
         int tipPercent = 18;
         int people = 4;
-        double tipValue = Math.round(billAmount*tipPercent/100.0); // I NEED !%15z72!!!!
+        double tipValue = Math.round(billAmount*tipPercent)/100.0; 
         double totalBill = billAmount + tipValue;
-        System.out.println(tipValue);
-        double tipShare = tipValue/people;
-        System.out.println("Total tip: " + tipValue);
-        System.out.println(tipShare);
-       
+        System.out.println("Tip: $" + tipValue);
+        System.out.println("Total Bill $" + totalBill);
+        double share = Math.round(totalBill /4 *100.0)/100.0;
+        System.out.println("Each share $" + share);
+        
         // Your code here
 
     }

@@ -14,8 +14,7 @@ public class AverageCalculator {
         int score3 = 79;
         int score4 = 95;
         int score5 = 83;
-
-        // Your code here
-
+        System.out.println((score1 + score2 + score3 + score4 + score5)/5.0);
+        
     }
 }
