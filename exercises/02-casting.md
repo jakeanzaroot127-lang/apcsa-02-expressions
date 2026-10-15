@@ -77,4 +77,4 @@ With double numbers, they eventually round as it does math using BITS, and cents
 
 **3. If you can't use `==` to compare two doubles, what could you do instead? Write a line of code.**
 
-[your answer]
+System.out.println(Math.abs(a - b) < 0.00001);
